@@ -1,0 +1,37 @@
+from detail_fast import U, S
+
+U(
+    "suan-hua",
+    look="苗矮僵、新根少、根尖发褐发秃。老叶发黄，叶缘有时焦。浇水或雨后田面冒锈水。果树新梢短。整株像被按住，邻地不酸的却正常。",
+    when="多雨红黄壤、连年铵态氮、有机质薄的水田旱地。华南、西南、长江中下游最常见。回暖仍不发棵时最好认。",
+    plain="pH 越小越酸。多数庄稼喜欢 6.0～7.5。土太酸，钙镁磷抓不住，铝溶出来咬根尖。不是肥不够，是根吃不进去。茶叶窗口大约 4.5～6.0。",
+    longform=[
+        "先认根，再认叶。洗几棵苗：白尖多先别怪酸；尖褐、秃、侧根少，才像铝在咬。锈水、油膜是加分项，不是每块酸地都冒锈。下部匀黄像缺氮；整株发僵像根先伤。",
+        "酸不是一天变的。雨水淋走钙镁，铵态氮年年加账，有机质越来越薄。沙土一点石灰就过，黏土要多一点。石灰跟尿素同一天，氮会跑、苗会焦。",
+        "动手三步：测 pH、取区间下限分两次、看新根再薄肥。根还秃就猛尿素，等于往伤口撒盐。农用石灰常见每亩 50～150 公斤，分两次，宁少勿多。",
+        "茶叶、蓝莓不要按粮田改到 6.5。改过了铁锌又锁，黄叶会换样子回来。拿不准带土样去农技站，不要在群里抄公斤数。",
+    ],
+    longformEn=[
+        "Start with the root. Many white tips: don’t blame acid yet. Brown, bald tips: aluminium is already biting. Rusty water is a clue, not a must. Uniform yellow on old leaves looks like nitrogen; a stalled plant looks like acid.",
+        "Acid builds slowly. Rain leaches bases, ammonium-N adds to the bill, organic matter thins. Sand overshoots with lime; clay needs a little more. Lime with urea the same day wastes nitrogen.",
+        "Test pH, take the bottom of the range, split, wait for white new roots, then a thin feed. Urea on bald roots is salt on a wound. Agricultural lime is often 50–150 kg/mu, split.",
+        "Tea does not want a grain-field pH of 6.5. Push too far and iron locks. Unsure: take a sample to extension, don’t copy kilograms from a chat group.",
+    ],
+    elook="Seedlings stay short. New roots are few, tips brown and bald. Old leaves yellow; water can look rusty. The whole plant looks pinned down while the next field grows.",
+    ewhen="Wet red-yellow soils, years of ammonium-N, thin organic matter. South and southwest China. Easiest to spot when warmth does not restart growth.",
+    eplain="Lower pH is more acid. Most crops like 6.0–7.5. Too acid, calcium, magnesium and phosphorus will not hold; aluminium bites root tips. It is not a lack of fertiliser — the root cannot eat.",
+    steps=S("0～20 厘米多点测 pH，茶园单独取样。","多数作物 pH＜5.5 才优先改酸；5.5～6.0 先观察。","农用石灰常见每亩 50～150 公斤，沙土按下限，分两次。","秋后到播前 15 天撒匀旋进 15～20 厘米，与铵态氮隔 7～10 天。","生石灰不往苗上撒。茶园绝不能抄粮田上限。","配腐熟有机肥，生理酸性肥先减。","下一季再测，过了 6.0 多数粮田就停。"),
+    esteps=S("Test 0–20 cm pH from many spots; sample tea separately.","Priority only below pH 5.5; 5.5–6.0 watch.","Agricultural lime often 50–150 kg/mu, sand at the floor, split.","Work in 15–20 cm after harvest to 15 days before sowing; keep 7–10 days from ammonium-N.","No quicklime on seedlings. Never copy grain rates onto tea.","Add rotted organic matter; cut acid-forming fertiliser.","Retest next season; stop near pH 6 for most grain."),
+    nat=S("红黄壤盐基少，雨水把钙镁淋走。","母质含铝，酸了铝溶出来咬根。","冷浸田会把酸化和亚铁毒叠在一起。"),
+    enat=S("Red-yellow earth has few bases; rain washes calcium and magnesium away.","Parent material is high in aluminium, which dissolves when the soil sours.","Cold waterlogged paddies stack acid with ferrous toxicity."),
+    hum=S("长期只撒尿素、硫酸铵、氯化铵。","秸秆拿走、不施腐熟有机肥。","不测 pH 就按邻县石灰账抄。"),
+    ehum=S("Years of urea, ammonium sulphate or ammonium chloride only.","Straw removed, no rotted organic matter.","Copying a neighbour’s lime rate without a pH test."),
+    check="拔几棵洗根看尖：褐秃少白尖再测 0～20 厘米 pH。记下锈水和施肥史。",
+    echeck="Wash roots. Brown bald tips plus a 0–20 cm pH. Note rusty water and the fertiliser history.",
+    dont=S("没测 pH 就按听说的最大量撒石灰","茶叶园按粮田改到中性","石灰跟尿素、鲜粪同一天混","发僵一律当缺肥猛追氮"),
+    edont=S("Don’t dump the rumoured maximum lime without a pH.","Don’t push tea to neutrality.","Don’t mix lime with urea or fresh manure the same day.","Don’t treat stall as hunger and pour nitrogen."),
+    test="苗僵、根褐、锈水时测 pH 和交换性铝。改完下一季再测。8～15 点混合。",
+    etest="Test pH and exchangeable aluminium when seedlings stall. Retest next season. Mix 8–15 spots.",
+    prev=S("铵态氮不要连年当唯一氮源。","腐熟有机肥垫底。","改完隔季再测，不要连年加码。"),
+    eprev=S("Don’t run ammonium-N as the only nitrogen every year.","Keep rotted organic matter under the crop.","Retest after liming; don’t stack years of lime."),
+)

@@ -1,0 +1,1 @@
+import{r as e}from"./lang-BIc6eeiU.js";import{t}from"./utils-DojpP95n.js";var n=e();function r({className:e,...r}){return(0,n.jsx)(`span`,{className:t(`inline-flex items-center rounded-full bg-surface-2 px-3 py-1 text-sm font-medium text-clay`,e),...r})}export{r as t};

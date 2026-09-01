@@ -1,0 +1,61 @@
+import { makeArticle, type DoseIn } from "./helpers";
+import { videoForSlug } from "./videos";
+import type { Article } from "./types";
+
+export function art(
+  slug: string,
+  title: string,
+  subtitle: string,
+  summary: string,
+  problems: string[],
+  crops: string[],
+  regions: string[],
+  seasons: string[],
+  look: string,
+  when: string,
+  cropsPlain: string,
+  c1: [string, string, string],
+  c2: [string, string, string],
+  plain: string,
+  nat: string[],
+  hum: string[],
+  steps: string[],
+  dosages: DoseIn[],
+  related: string[],
+  extra?: Partial<Article>,
+): Article {
+  return makeArticle({
+    slug,
+    title,
+    subtitle,
+    summary,
+    crops,
+    problems,
+    regions,
+    seasons,
+    tags: [...problems, slug],
+    coverCrop: extra?.coverCrop ?? null,
+    coverType: extra?.coverType ?? "soil",
+    photos: extra?.photos,
+    phenomenon: { appearance: look, conditions: when, commonCrops: cropsPlain },
+    confuseWith: [
+      { other: c1[0], difference: c1[1], lookAt: c1[2] },
+      { other: c2[0], difference: c2[1], lookAt: c2[2] },
+    ],
+    causes: { natural: nat, human: hum, plainExplain: plain },
+    solutions: { steps, videos: extra?.solutions?.videos ?? [videoForSlug(slug, title)] },
+    dosages,
+    prevention: extra?.prevention ?? [
+      `「${title.split("：")[0]}」按本篇的动作做，不要抄邻篇的公斤数。`,
+      `「${title.split("：")[0]}」先小面积试，再铺开。`,
+      `「${title.split("：")[0]}」改完看新根和新叶，不要加倍。`,
+    ],
+    indicators: extra?.indicators ?? [],
+    relatedSlugs: related,
+    featured: extra?.featured,
+    hot: extra?.hot,
+    fieldCheck: extra?.fieldCheck,
+    dontDo: extra?.dontDo,
+    whenToTest: extra?.whenToTest,
+  });
+}

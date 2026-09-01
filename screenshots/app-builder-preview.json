@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "土知 · 看懂土地，种好地",
+      "hasCanvas": false,
+      "bodyTextLen": 560,
+      "bodyTextHash": "d8ee4aae446adcc2c26b5a13c00a49f7bdda09cb4c1ca10c3d48afec4ca59f0c",
+      "bodyTextPrefix": "土 土知 看懂土地，种好地 首页 诊断 知识 问答 我的 百科 登录 土知 看懂土地，种好地 土发白、发酸、板结、苗黄？先拍三张",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "土知 · 看懂土地，种好地",
+      "hasCanvas": false,
+      "bodyTextLen": 557,
+      "bodyTextHash": "a92eea417a6e48d65014c4ee0c43fd06a400e3a32b9fa66e210f29847b88cdcc",
+      "bodyTextPrefix": "土 土知 看懂土地，种好地 登录 土知 看懂土地，种好地 土发白、发酸、板结、苗黄？先拍三张：整株、特写、土面。弄清原因再下肥。",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

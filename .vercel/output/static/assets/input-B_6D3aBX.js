@@ -1,0 +1,1 @@
+import{r as e}from"./lang-BIc6eeiU.js";import{t}from"./utils-DojpP95n.js";var n=e();function r({className:e,...r}){return(0,n.jsx)(`input`,{suppressHydrationWarning:!0,className:t(`min-h-12 w-full rounded-lg border border-line bg-surface px-4 text-base text-ink placeholder:text-subtle`,e),...r})}export{r as t};

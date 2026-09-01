@@ -1,0 +1,1 @@
+import{i as e,t}from"./react-SIfiwpqq.js";import{r as n}from"./lang-BIc6eeiU.js";import{t as r}from"./utils-DojpP95n.js";var i=e(t(),1),a=n(),o=(0,i.forwardRef)(function({className:e,...t},n){return(0,a.jsx)(`textarea`,{ref:n,className:r(`min-h-28 w-full rounded-lg border border-line bg-surface px-4 py-3 text-base text-ink placeholder:text-subtle`,e),...t})});export{o as t};

@@ -1,0 +1,40 @@
+from detail_fast import U, S
+
+def n(slug, look, when, plain, zh, en, elook, ewhen, eplain, steps, esteps, nat, hum, check, dont, test, prev,
+      enat=None, ehum=None, echeck=None, edont=None, etest=None, eprev=None):
+    U(
+        slug, look, when, plain, zh, en, elook, ewhen, eplain, steps, esteps,
+        nat, enat or [x for x in nat], hum, ehum or [x for x in hum],
+        check, echeck or check, dont, edont or dont, test, etest or test, prev, eprev or prev,
+    )
+
+n("hong-huang-rang-gai-suan",
+  "南方红土或黄泥土上，玉米花生苗矮、叶黄、根尖褐。土色红黄，摸着发黏或发沙。雨后田面有时发锈。不是北方麦田全景。",
+  "华南、西南、长江中下游的红黄壤旱地和水田。多雨淋溶、长期铵态氮、有机质低。春季回暖仍僵时最明显。",
+  "红黄壤本底就酸，像没盖的醋缸，雨把盐基淋走。石灰是改酸的药，不是年年吃的饭。0～20 厘米 pH 不到 5.5 才优先改，沙土更少、分两次，明年再测。",
+  ["红黄壤改酸，先认土色和根，再认 pH。苗僵叶黄根褐，邻县石灰账不能直接抄。沙土按下限，黏土略多，和铵态氮错开一周。",
+   "南方这场雨不是北方那场雨。盐基本来就少，铵态氮再加码，pH 一年年往下掉。有机肥把缓冲做起来，石灰才站得住。",
+   "取 0～20 厘米测 pH。低于 5.5 才进石灰；5.5～6.0 先观察。农用石灰常见每亩 50～150 公斤，分两次旋进 15～20 厘米。茶叶另篇，不要按粮田改到中性。",
+   "明年再测。连年加码会把微量元素锁住。生石灰不往苗上撒。先小面积，看新根白不白。"],
+  ["Red-yellow earth: read colour and roots, then pH. Stunted yellow plants with brown tips. Don’t copy a northern lime rate. Sand at the floor, keep a week from ammonium-N.",
+   "Southern rain is a different rain. Bases were already scarce; ammonium-N pushes pH down year after year. Organic matter is the buffer that lets lime stay.",
+   "Test 0–20 cm. Lime only below 5.5. Agricultural lime often 50–150 kg/mu, split into 15–20 cm. Tea is another article — do not chase neutrality.",
+   "Retest next year. Stacking lime locks micronutrients. No quicklime on seedlings. Trial a patch and watch for white new roots."],
+  "Southern red or yellow earth, maize and peanut seedlings short, tips brown. Soil stains red-yellow. Sometimes rusty water after rain.",
+  "South China, southwest, middle-lower Yangtze. Leaching rain, ammonium-N, low organic matter.",
+  "The soil is a vinegar jar with no lid. Lime is medicine, not a meal. Treat as a priority only below pH 5.5; sand less, split, retest next year.",
+  S("取土测 pH，记下质地。","pH＜5.5 才优先农用石灰。","沙土按下限，分两次，与苗和铵态氮错开。","配腐熟有机肥。","明年再测，不要连年加码。","茶园不要套这篇的粮田区间。"),
+  S("Test pH and note texture.","Lime only below 5.5.","Sand at the floor, split, keep off seedlings and ammonium-N.","Add rotted organic matter.","Retest next year; don’t stack.","Don’t use grain rates on tea."),
+  S("母质酸、淋溶强。","降雨把盐基带走。","有机质低，缓冲差。"),
+  S("铵态氮连年。","秸秆不还。","不测就撒石灰。"),
+  "拔苗看根尖褐不褐，再测 0～20 厘米 pH。",
+  S("不测 pH 就按传说亩施几百公斤。","生石灰直接撒苗上。","把茶园按粮田改到中性。"),
+  "改酸前必须测；改完下一季再测。取样 8～15 点混合。",
+  S("有机肥与化肥搭配。","定期测 pH。","改完看新根，不要加倍石灰。"),
+  enat=S("Acid parent material and strong leaching.","Rain strips bases.","Low organic matter, weak buffer."),
+  ehum=S("Ammonium-N every year.","Straw not returned.","Lime without a test."),
+  echeck="Pull plants for brown tips, then test 0–20 cm pH.",
+  edont=S("Don’t dump hundreds of kilograms on hearsay.","Don’t throw quicklime on seedlings.","Don’t push tea to grain-field neutrality."),
+  etest="Test before you lime, and again next season. Mix 8–15 spots.",
+  eprev=S("Pair organic matter with fertiliser.","Watch pH on a calendar.","After liming, watch new roots — don’t double."),
+)
